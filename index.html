@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="newstyle.css" />
+
+  <!-- Font Awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar Section -->
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto ms-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr " aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr " href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr " href="#myintro">My Intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr " href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr " href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr " href="#contact">Contact</a>
+          </li>
+          <li>
+            <button href="#contact" class="btn-dark btn">Hire Me</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero_section bg-light" id="home">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-lg-6 col-sm-6 p-5 ">
+            <h3 class="mt-5 mb-2 display-2 text-center">Hello Folks!</h3>
+            <h1 class="mt-4 display-6 text-light bg-dark text-center">I'm Aishwary Gupta</h1>
+            <h2 class=" text-center">Frontend Developer</h2>
+            <p class="text-center">
+              Passionate and experienced frontend developer with over 1.5 years of expertise in crafting responsive,
+              user-centric web applications. Proficient in modern technologies like React, Bootstrap 5, and JavaScript,
+              committed to delivering seamless and engaging user experiences.
+            </p>
+            <div class="actions text-center mt-5 p-1  ">
+              <a href="assets/Resume Cover 2pdf.pdf" class="primary-btn" download>
+                Resume</a>
+              <a href="#contact" class="primary-btn" data-type="inverted-btn">
+                Contact Me</a>
+            </div>
+          </div>
+          <div class=" col-lg-6 col-sm-6 p-4">
+            <img src="assets/IMG-20240204-WA0060.jpg" class="heroImg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills Section -->
+
+    <section class="skills_section" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="column-container">
+              <div class="text-center">
+                <h3 class="fs-5">Why Choose Me</h3>
+                <h1 class="fs-1 mb-5">My Skills</h1>
+              </div>
+              <div class="skill-container mt-5 ">
+                <div class="skill-bar-container">
+                  <div class="info">
+                    <small>HTML5 & CSS 3</small>
+                    <small>95%</small>
+                  </div>
+                  <div class="skill-level">
+                    <div class="skill-bar html&css"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-container">
+                  <div class="info">
+                    <small>Bootstrap</small>
+                    <small>85%</small>
+                  </div>
+                  <div class="skill-level">
+                    <div class="skill-bar bootstrap"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-container">
+                  <div class="info">
+                    <small>JavaScript</small>
+                    <small>80%</small>
+                  </div>
+                  <div class="skill-level">
+                    <div class="skill-bar javascript"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-container">
+                  <div class="info">
+                    <small>jQuery</small>
+                    <small>70%</small>
+                  </div>
+                  <div class="skill-level">
+                    <div class="skill-bar jquery"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-container">
+                  <div class="info">
+                    <small>React JS</small>
+                    <small>70%</small>
+                  </div>
+                  <div class="skill-level">
+                    <div class="skill-bar reactjs"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-container">
+                  <div class="info">
+                    <small>My SQL</small>
+                    <small>75%</small>
+                  </div>
+                  <div class="skill-level">
+                    <div class="skill-bar mysql"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-container">
+                  <div class="info">
+                    <small>Git & GitHub</small>
+                    <small>85%</small>
+                  </div>
+                  <div class="skill-level">
+                    <div class="skill-bar github"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-container">
+                  <div class="info">
+                    <small>Canva</small>
+                    <small>85%</small>
+                  </div>
+                  <div class="skill-level">
+                    <div class="skill-bar canva"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+
+    <section class="about_section bg-black" id="myintro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 p-4">
+            <div data-type="inverted-img">
+              <img src="assets/UserLogo.png" class=" userLogo" alt="profile" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="content mt-5 p-5">
+              <h1 class="fs-5">About Me</h1>
+              <h3 class="fs-1">My Intro</h3>
+              <p>
+                I'm passionate frontend developer.
+              </p>
+              <ul class="information">
+                <li class="detail">
+                  <i class="fa-solid fa-user fill-pink"></i>
+                  Name &nbsp;&nbsp; : &nbsp;&nbsp; Aishwary Gupta
+                </li>
+                <li class="detail">
+                  <i class="fa-solid fa-phone fill-pink"></i>
+                  Phone &nbsp; : &nbsp;&nbsp; 6392632901
+                </li>
+                <li class="detail">
+                  <i class="fa-solid fa-envelope fill-pink"></i>
+                  Mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;
+                  aishwarygupta15@gmail.com
+                </li>
+              </ul>
+
+              <!-- |Interest Section| -->
+              <h4 class="fs-1">My Interest</h4>
+              <ul class="interest">
+                <li>
+                  <i class="fa-solid fa-palette fill-pink"></i>
+                  Designing
+                </li>
+                <li>
+                  <i class="fa-solid fa-music fill-pink"></i>
+                  Music
+                </li>
+                <li>
+                  <i class="fa-solid fa-rocket fill-pink"></i>
+                  Exploring
+                </li>
+                <li>
+                  <i class="fa-solid fa-car fill-pink"></i>
+                  Travelling
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="service_section bg-grey" id="services">
+      <div class="container">
+        <div class="column-container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="content text-center mb-5">
+                <h3 class="fs-5">Services</h3>
+                <h1 class="fs-1">What I Offer</h1>
+              </div>
+              <div class="grid-card-container">
+                <div class="card">
+                  <i class="fa-brands fa-dev fill-white" data-type="card-icons"></i>
+                  <h4>Web Designing</h4>
+                  <p class="para">
+                    Delivering custom web design solutions that blend creativity and functionality to elevate your
+                    online presence.
+                  </p>
+                </div>
+                <div class="card">
+                  <i class="fa-brands fa-github fill-white" data-type="card-icons"></i>
+                  <h4>Git & GitHub</h4>
+                  <p class="para">
+                    Offering comprehensive Git and GitHub services for effective code management and collaborative
+                    development.
+                  </p>
+                </div>
+                <div class="card">
+                  <i class="fa-solid fa-swatchbook fill-white" data-type="card-icons"></i>
+                  <h4>UI & UX Design</h4>
+                  <p class="para">
+                    Creating intuitive and engaging user interfaces that enhance user experience and drive satisfaction.
+                  </p>
+                </div>
+                <div class="card">
+                  <i class="fa-solid fa-bullhorn fill-white" data-type="card-icons"></i>
+                  <h4>SEO</h4>
+                  <p class="para">
+                    Boosted search engine rankings for clients across diverse industries, ensuring sustainable growth
+                    and higher conversion
+                    rates.
+                  </p>
+                </div>
+                <div class="card">
+                  <i class="fa-solid fa-cannabis fill-white" data-type="card-icons"></i>
+                  <h4>Canva Design</h4>
+                  <p class="para">
+                    Expert Canva design services to make your brand stand out and captivate your audience.
+                  </p>
+                </div>
+
+                <div class="card">
+                  <i class="fa-solid fa-copyright fill-white" data-type="card-icons"></i>
+                  <h4>Branding</h4>
+                  <p class="para">
+                    Crafting unique and memorable brand experiences that elevate your market presence.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfoilo Section -->
+
+    <section class="portfolio_section bg-white" id="portfolio">
+      <div class="container">
+        <h3 class="fs-5 text text-center">My Portfolio</h3>
+        <h1 class="fs-1 text-center">Recent Work</h1>
+        <div class="row">
+          <div class="col-lg-12 grid-card-container ">
+            <div class="card portfolio-card">
+              <a href="#" class="primary-btn demo" id="">View Project</a>
+            </div>
+            <div class="card portfolio-card">
+              <a href="#" class="primary-btn demo" id="">View Project</a>
+            </div>
+            <div class=" card portfolio-card">
+              <a href="#" class="primary-btn demo" id="">View Project</a>
+            </div>
+            <div class="card portfolio-card">
+              <a href="#" class="primary-btn demo" id="">View Project</a>
+            </div>
+            <div class="card portfolio-card">
+              <a href="#" class="primary-btn demo" id="">View Project</a>
+            </div>
+            <div class="card portfolio-card">
+              <a href="#" class="primary-btn demo" id="">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --Work Together Section-- -->
+
+    <section class="project_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <div class="project-content">
+              <h2 class="fs-1">Let's work together on next Project</h2>
+              <p class="fs-5">
+                Passionate about leveraging cutting-edge technologies to deliver impactful digital experiences and
+                transform ideas into
+                interactive solutions.
+              </p>
+              <a href="#" class="primary-btn" data-type="white-btn">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact_section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <div class="column-container">
+              <div class="content text-center">
+                <h3 class="fs-1">Contact Us</h3>
+                <h1 class="fs-5">Get in Touch</h1>
+              </div>
+
+              <form action="#" class="form mt-4">
+                <input type="text" placeholder="Username" required />
+                <input type="number" placeholder="Phone Number" required />
+                <input type="email" placeholder="Email Address" required />
+                <textarea placeholder="Type Your Message Here" rows="6" required></textarea>
+                <input type="submit" value="Send Message" class="primary-btn" />
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- --- Footer Section--- -->
+
+  <footer class="footer_section">
+    <div class="container-fluid">
+      <p class="bg-dark footer text-light text-center">
+        Copyright &copy; 2024 All rights are reserved by Aishwary Gupta
+      </p>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

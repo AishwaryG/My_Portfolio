@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rammetto+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary-grey: #424242;
+  --secondary-grey: #f5f6f8;
+  --primary-pink: #9759e3;
+  --secondary-pink: #feced6;
+}
+
+/* Navbar styling */
+
+.navbar {
+  width: 100%;
+  height: 13vh;
+}
+
+.heroSection {
+  padding: 100px 0;
+}
+.nav-link {
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-pink);
+  /* padding: 20px 0px; */
+  font-size: 15px;
+  margin: 0px 20px;
+  position: relative;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  top: 30px;
+  position: absolute;
+  background-color: var(--primary-pink);
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+  color: var(--primary-pink);
+  opacity: 1;
+}
+
+.navbar ul li a {
+  color: var(--black);
+
+}
+.navbar ul li a:hover {
+  color: #9759e3;
+}
+
+.navbar ul li button {
+  border: 0.1rem solid var(--black);
+  font-size: 10px;
+  border-radius: 50px;
+  padding: 6px 15px;
+    font-size: 15px;
+
+}
+.navbar ul li button:hover {
+  background: var(--primary-pink);
+  border-color: #9759e3;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out all;
+}
+.nav-item .nav-link {
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Hero Section */
+
+.hero_section {
+  padding: 20px 0 100px;
+  background-image: url(assets/abstract-blue-smooth-wavy-flow-lines-background.jpg);
+}
+
+.heroImg {
+  height: 450px;
+  border-radius: 80px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.primary-btn {
+  border: 0.1rem solid var(--primary-pink);
+  font-size: 10px;
+  border-radius: 50px;
+  padding: 6px 10px;
+  background: var(--black);
+  text-decoration: none;
+  color: var(--white);
+    font-size: 15px;
+
+}
+.primary-btn:hover {
+  background: var(--primary-pink);
+  color: var(--white);
+  border-color: var(--primary-pink);
+  transition: 0.3s all ease-in-out;
+}
+
+/* Skills Section */
+.skills_section {
+  padding: 100px 0 200px;
+  color: var(--black);
+}
+.skill-level {
+  background: var(--white);
+  width: 100%;
+  height: 0.7rem;
+  margin-top: 0.7rem;
+  border-radius: 3rem;
+  position: relative;
+}
+.skill-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 6rem;
+  grid-row-gap: 2rem;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.skill-bar {
+  background: var(--primary-pink);
+  border-radius: 3rem;
+  position: absolute;
+  inset: 0;
+}
+.html {
+  width: 95%;
+}
+.CSS {
+  width: 90%;
+}
+.bootstrap {
+  width: 85%;
+}
+.jquery {
+  width: 70%;
+}
+.javascript {
+  width: 80%;
+}
+.mysql {
+  width: 75%;
+}
+.reactjs {
+  width: 70%;
+}
+.github {
+  width: 85%;
+}
+.canva {
+  width: 80%;
+}
+
+/* About ME Section */
+
+.about_section {
+  padding: 100px 0;
+  background: var(--secondary-grey);
+  background-image: url(assets/stylish-blue-flowing-wave-background.jpg);
+  background-size: cover;
+}
+
+[data-type="inverted-img"] {
+  transform: scaleX(-1);
+}
+.detail {
+  margin-bottom: 1.6rem;
+  text-decoration: none;
+}
+.userLogo {
+  height: 350px;
+  border-radius: 80px;
+  margin-top: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.interest {
+  display:block;
+  gap: 2rem;
+  margin-top: 1.2rem;
+  
+}
+.interest li:hover {
+  transform: scale(1.2);
+  transition: 0.3s all ease-in-out;
+  color: var(--primary-pink);
+}
+.information .detail:hover {
+  transition: 0.3s all ease-in-out;
+  color: var(--primary-pink);
+}
+
+/* Services */
+.service_section {
+  padding: 100px 0 100px 0;
+  background: var(--white);
+}
+
+.grid-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 3.5rem;
+  grid-column-gap: 2rem;
+}
+
+.card {
+  padding: 1rem 0 0 2rem;
+  text-align: left;
+}
+
+[data-type="card-icons"] {
+  width: 50px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid #9759e3;
+  border-radius: 25px 5px 25px 5px;
+  transition: 0.1s all ease-in-out;
+}
+.card:hover.card h4 {
+  font-size: 1.8rem;
+  transition: 0.5s ease-in-out;
+}
+.card:hover [data-type="card-icons"] {
+  background: var(--white);
+  color: var(--primary-pink);
+}
+
+/* Portfolio Section */
+.portfolio_section {
+  padding: 100px 0;
+  background-image: url(assets/stylish-blue-flowing-wave-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card {
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.portfolio-card:nth-child(1) {
+  background-image: url("assets/13186284_5149654.jpg");
+}
+.portfolio-card:nth-child(2) {
+  background-image: url("assets/10798281_19362653.jpg");
+}
+.portfolio-card:nth-child(3) {
+  background-image: url("assets/5453744_For-sale.jpg");
+}
+.portfolio-card:nth-child(4) {
+  background-image: url("assets/Project.jpg");
+}
+.portfolio-card:nth-child(5) {
+  background-image: url("assets/Project.jpg");
+}
+.portfolio-card:nth-child(6) {
+  background-image: url("assets/Project.jpg");
+}
+.portfolio-card::before {
+  content: "";
+  background: var(--black);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.portfolio-card:hover::before {
+  opacity: 0.6;
+}
+.demo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -20%;
+  transition: top 0.5s;
+}
+.portfolio-card:hover .demo {
+  top: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+/* --Work together section-- */
+
+.project_section {
+  padding: 100px 0 100px 0;
+  background-image: url(assets/35237723_8287110.jpg);
+  background-size: cover;
+}
+.project-content {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+.project-content h2 {
+  font-size: 2rem;
+}
+
+
+/* ---ContactUs Section--- */
+.contact_section {
+  padding: 100px 0;
+  background: url(assets/pleased-friendly-handsome-caucasian-man-casual-outfit-showing-thumbs-up-as-rate-something-good-smiling-nod-agreement-give-positive-feedback-thinking-something-is-excellent.jpg);
+  
+  background-size: auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.9rem 1rem;
+  resize: none;
+  background: var(--secondary-grey);
+  font-size: 1rem;
+}
+input:hover,
+textarea:hover {
+  outline: 0.1rem solid var(--primary-pink);
+}
+
+/* ---footer section--- */
+
+.footer-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 7px;
+}
