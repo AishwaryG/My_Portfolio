@@ -97,7 +97,7 @@
 
 .hero_section {
   padding: 20px 0 100px;
-  background-image: url(assets/Abstract-Curve-Art-HD-Desktop-Wallpaper-099887.jpg);
+  background-image: url(assets/46762.jpg);
 }
 
 .heroImg {
@@ -106,6 +106,10 @@
   margin-top: 15px;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.heroImg:hover{
+  transform: scale(1.1);
+  transition:all .3s ease-in-out;
 }
 
 .primary-btn {
